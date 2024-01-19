@@ -1,22 +1,44 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: rgb(217, 245, 212);
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1{
+color:rgb(6, 99, 68) ;
 }
 
 #qr-input {
     padding: 10px;
     font-size: 16px;
     margin-right: 10px;
+    border-radius: 3px;
+    boder: none;
+}
+
+.code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #generate-btn {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: rgb(6, 99, 68);
+
 }
 
 #qrcode {

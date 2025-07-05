@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Gerador de QR Code</title>
 </head>
+
 <body>
 
     <div class="container">
-        <h1>Gerador de Qr Code</h1>
-        <p>"Transforme informações em instantes. Crie seu QR Code personalizado agora e simplifique a forma como compartilha dados!"</p>
-        <input type="text" id="qr-input" placeholder="Texto para QR Code">
-        <button id="generate-btn" onclick="generateQRCode()">Gerar QR Code</button>
-        <div class="code" id="qrcode"></div>
-        <button id="download-btn" style="display:none;" onclick="downloadQRCode()">Baixar QR Code</button>
+        <div class="texto">
+            <h2>Gerador de Qr Code</h2>
+            <p>"Transforme informações em instantes. Crie seu QR Code personalizado agora e simplifique a forma como
+                compartilha dados!"</p>
+        </div>
+
+        <div class="qr-wrapper">
+            <input type="text" id="qr-input" placeholder="Texto para QR Code" class="qr-input">
+            <button id="generate-btn" onclick="generateQRCode()" class="btn-gerar">
+                <img src="qrcode.png" alt="Gerar" class="btn-icon">
+            </button>
+        </div>
+
     </div>
+
+    <div class="result">
+        <div class="code" id="qrcode"></div>
+        <button id="download-btn" onclick="downloadQRCode()" class="btn-download">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download" class="btn-icon">
+            Baixar QR Code
+        </button>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
